@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="container mt-3">
+  <div class="jumbotron pinky-border py-4">
+    <h1 class="jumbo-header text-center"><i class="fas fa-praying-hands mr-2"></i>Welcome To PigeonWorks Messaging Services</h1>
+    <p class="jumbo-content">We provide messaging services, so good, that talk is all you'd want to do !!</p>
+    <hr class="my-4" style="background-color: #f64c72;">
+    <div class="flex-container smallContainer mx-auto text-center">
+      <a class="btn btn-outline-primary btn-lg white_border mr-auto py-auto wbtn my-1" href="{% url 'login' %}" role="button" style="border-radius: 45px;">Login</a>
+      <h4 class="mx-2 my-auto jumbo-content">OR</h4>
+      <a class="btn btn-outline-primary btn-lg ml-auto wbtn my-1" href="{% url 'register' %}" role="button" style="border-radius: 45px;">Register</a>
+    </div>
+  </div>
+</div>
+
+<div class="container my-2 white_border text-center">
+  <h3 class="fact-main">Some Interesting Facts About Messages</h3>
+  <div class="flex-container text-center">
+    <div class="box flex-container-column text-center mx-2 p-0">
+      <div class="round_borders mb-0"><i class="far fa-comment-alt fa-3x box-icon"></i></div>
+      <hr style="border: 1px solid #f64c72; width: 95%;">
+      <div>
+        <p class="box-content">The average Millennial exchanges an average of 67 text messages per day</p>
+      </div>
+    </div>
+    <div class="box flex-container-column text-center mx-2">
+      <div class="round_borders"><i class="far fa-envelope fa-3x box-icon"></i></div>
+      <hr style="border: 1px solid #f64c72; width: 95%;">
+      <div>
+        <p class="box-content">It takes the average person 90 minutes to respond to email, but only 90 seconds to respond to a text message</p>
+      </div>
+    </div>
+    <div class="box flex-container-column text-center mx-2">
+      <div class="round_borders"><i class="fas fa-stopwatch fa-3x box-icon"></i></div>
+      <hr style="border: 1px solid #f64c72; width: 95%;">
+      <div>
+        <p class="box-content">Text messages are read, on average, in under five seconds</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+  <title>PigeonWorks | Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark_blue">
+    <div class="container w75">
+      <a class="nav_header" href="/home.html"><i class="fas fa-dove mr-2"></i>PigeonWorks Messaging</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item my-auto">
+            <a class="nav-link nav_subheaders" href="#">Login</a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link nav_subheaders" href="about.html">About</a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link" href="https://github.com/AniketShahane" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link" href="https://www.linkedin.com/in/aniket-shahane-93a206149/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav_subheaders" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Messages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#"></a>
+              <p class="dropdown-item">This is going to be a paragraph</p>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="jumbotron pinky-border py-4">
+      <h1 class="jumbo-header text-center"><i class="fas fa-praying-hands mr-2"></i>Welcome To PigeonWorks Messaging Services</h1>
+      <p class="jumbo-content">We provide messaging services, so good, that talk is all you'd want to do !!</p>
+      <hr class="my-4" style="background-color: #f64c72;">
+      <div class="flex-container smallContainer mx-auto text-center">
+        <a class="btn btn-outline-primary btn-lg white_border mr-auto py-auto wbtn my-1" href="/login.html" role="button" style="border-radius: 45px;">Login</a>
+        <h4 class="mx-2 my-auto jumbo-content">OR</h4>
+        <a class="btn btn-outline-primary btn-lg ml-auto wbtn my-1" href="/register.html" role="button" style="border-radius: 45px;">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-2 white_border text-center">
+    <h3 class="fact-main">Some Interesting Facts About Messages</h3>
+    <div class="flex-container text-center">
+      <div class="box flex-container-column text-center mx-2 p-0">
+        <div class="round_borders mb-0"><i class="far fa-comment-alt fa-3x box-icon"></i></div>
+        <hr style="border: 1px solid #f64c72; width: 95%;">
+        <div>
+          <p class="box-content">The average Millennial exchanges an average of 67 text messages per day</p>
+        </div>
+      </div>
+      <div class="box flex-container-column text-center mx-2">
+        <div class="round_borders"><i class="far fa-envelope fa-3x box-icon"></i></div>
+        <hr style="border: 1px solid #f64c72; width: 95%;">
+        <div>
+          <p class="box-content">It takes the average person 90 minutes to respond to email, but only 90 seconds to respond to a text message</p>
+        </div>
+      </div>
+      <div class="box flex-container-column text-center mx-2">
+        <div class="round_borders"><i class="fas fa-stopwatch fa-3x box-icon"></i></div>
+        <hr style="border: 1px solid #f64c72; width: 95%;">
+        <div>
+          <p class="box-content">Text messages are read, on average, in under five seconds</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+</html> -->
