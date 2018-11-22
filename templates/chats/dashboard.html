@@ -1,93 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
-  <title>PigeonWorks | Home</title>
-</head>
+{% block content %}
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark_blue">
-    <div class="container w75">
-      <a class="nav_header" href="/home.html"><i class="fas fa-dove mr-2"></i>PigeonWorks Messaging</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item my-auto">
-            <a class="nav-link nav_subheaders" href="#">Login</a>
-          </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link nav_subheaders" href="about.html">About</a>
-          </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link" href="https://github.com/AniketShahane" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-          </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link" href="https://www.linkedin.com/in/aniket-shahane-93a206149/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav_subheaders" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Messages
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#"></a>
-              <p class="dropdown-item">This is going to be a paragraph</p>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container mt-3">
-    <div class="jumbotron jumbotron-fluid pinky-border py-4">
-      <div class="container text-center">
-        <div class="flex-container-dashboard">
-          <div class="option1">
-            <h1 class="option_icon">26</h1>
-            <h1 class="dashboard_subheader">Total Count</h1>
-          </div>
-          <div class="option2">
-            <div class="logo_user"><i class="far fa-comments"></i></div>
-            <h1 class="dashboard_header">Messages</h1>
-          </div>
-          <a class="option3" href="search.html">
-            <div class="option_icon"><i class="fas fa-search"></i></div>
-            <h1 class="dashboard_subheader">Search</h1>
-          </a>
+<div class="container mt-3">
+  <div class="jumbotron jumbotron-fluid pinky-border py-4">
+    <div class="container text-center">
+      <div class="flex-container-dashboard">
+        <div class="option1">
+          <h1 class="option_icon">26</h1>
+          <h1 class="dashboard_subheader">Total Count</h1>
         </div>
+        <div class="option2">
+          <div class="logo_user"><i class="far fa-comments"></i></div>
+          <h1 class="dashboard_header">Messages</h1>
+        </div>
+        <a class="option3" href="{% url 'search' %}">
+          <div class="option_icon"><i class="fas fa-search"></i></div>
+          <h1 class="dashboard_subheader">Search</h1>
+        </a>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="dashboard_content white_border mt-4">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item" style="display: flex;">
-        <a href="#" class="content_header">Aniket Shahane</a>
-        <p class="content_message mb-0">Hi, how're you doing ??</p>
-      </li>
-      <li class="list-group-item" style="display: flex;">
-        <a href="#" class="content_header">Jason Mraz</a>
-        <p class="content_message mb-0">Pubg khelne aarha hai kya??</p>
-      </li>
-      <li class="list-group-item" style="display: flex;">
-        <a href="#" class="content_header">Shanay Shah</a>
-        <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
-      </li>
-    </ul>
-  </div>
-
-  <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
-</body>
-
-</html>
+<div class="dashboard_content white_border mt-4 chatboard" style="height: 50vh; overflow-y: scroll; background-color: #242582;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Aniket Shahane</a>
+      <p class="content_message mb-0">Hi, how're you doing ??</p>
+    </li>
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Jason Mraz</a>
+      <p class="content_message mb-0">Pubg khelne aarha hai kya??</p>
+    </li>
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Shanay Shah</a>
+      <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
+    </li>
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Shanay Shah</a>
+      <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
+    </li>
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Shanay Shah</a>
+      <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
+    </li>
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Shanay Shah</a>
+      <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
+    </li>
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Shanay Shah</a>
+      <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
+    </li>
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Shanay Shah</a>
+      <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
+    </li>
+    <li class="list-group-item" style="display: flex;">
+      <a href="#" class="content_header">Shanay Shah</a>
+      <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
+    </li>
+  </ul>
+</div>
+{% endblock %}

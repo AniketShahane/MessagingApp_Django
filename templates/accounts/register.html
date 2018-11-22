@@ -4,13 +4,10 @@
 
 <div class="container_control text-center">
   <div class="jumbotron p-0 mx-auto">
-    <form class="my-4 main-form" action="index.html" id="submission_form_1">
+    <form class="my-4 main-form" action="{% url 'register' %}" id="submission_form_1" method="post">
+      {% csrf_token %}
       <div class="logo_user"><i class="far fa-user-circle"></i></div>
       <h3 class="form_main">Register</h3>
-      <div class="flex-container-form fields">
-        <label for="username" class="my-auto">Name: </label>
-        <input type="text" class="form-control form_input" name="name" required>
-      </div>
       <div class="flex-container-form fields">
         <label for="username" class="my-auto">Email: </label>
         <input type="email" class="form-control form_input" name="email" required>
@@ -23,7 +20,10 @@
         <label for="password" class="my-auto">Password: </label>
         <input type="password" class="form-control form_input" name="password" required>
       </div>
-      <button type="submit" class="btn btn-primary btn-block" name="submit_details" style="display: none;">Log In</button>
+      <div class="flex-container-form fields">
+        <label for="username" class="my-auto">Confirm Password: </label>
+        <input type="text" class="form-control form_input my-auto" name="password2" required>
+      </div>
       <a class="submit_form" href="javascript:{document.querySelector('#submission_form_1').submit()}"><i class="fas fa-sign-in-alt mr-2 mt-auto"></i> Register Yourself</a>
     </form>
   </div>
