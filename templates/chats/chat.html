@@ -1,130 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/home.css">
-  <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
-  <title>PigeonWorks | Home</title>
-</head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark_blue">
-    <div class="container w75">
-      <a class="nav_header" href="/home.html"><i class="fas fa-dove mr-2"></i>PigeonWorks Messaging</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+{% block content %}
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item my-auto">
-            <a class="nav-link nav_subheaders" href="#">Login</a>
+<div class="container mt-3">
+  <div class="jumbotron jumbotron-fluid pinky-border py-4">
+    <div class="container text-center">
+      <h1 class="dashboard_header"><i class="far fa-comment-alt"></i> Chat With Aniket Shahane</h1>
+      <div class="dashboard_content white_border mt-4 chatboard" style="width: 90%; height: 60vh; overflow-y: scroll;">
+        <ul class="list-group list-group-flush messages">
+          <li class="list-group-item" style="display: flex;">
+            <!-- <p class="content_header">Aniket Shahane: </p> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Hi, how're you doing ??</p>
           </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link nav_subheaders" href="about.html">About</a>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Jason Mraz: </h4> -->
+            <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya??</p>
           </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link" href="https://github.com/AniketShahane" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Shanay Shah: </h4> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
           </li>
-          <li class="nav-item my-auto">
-            <a class="nav-link" href="https://www.linkedin.com/in/aniket-shahane-93a206149/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Shanay Shah: </h4> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav_subheaders" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Messages
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#"></a>
-              <p class="dropdown-item">This is going to be a paragraph</p>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li> -->
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Shanay Shah: </h4> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Shanay Shah: </h4> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Shanay Shah: </h4> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Shanay Shah: </h4> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Shanay Shah: </h4> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Jason Mraz: </h4> -->
+            <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya??</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Jason Mraz: </h4> -->
+            <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya??</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Jason Mraz: </h4> -->
+            <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya??</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Jason Mraz: </h4> -->
+            <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya?? Abe bolna bsdk kya chodrela hai be bantai bacchi bomai. Tere shootero ka khaas mere gully me pure shehar ki
+              awaas mere galli me</p>
+          </li>
+          <li class="list-group-item" style="display: flex;">
+            <!-- <h4 class="content_header">Shanay Shah: </h4> -->
+            <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe. Kyu kyuki hatela hai mere gully ka tareeka saleka sikela hai. Roshan chaukat ye avli bawali hai.</p>
+          </li>
         </ul>
       </div>
-    </div>
-  </nav>
-
-  <div class="container mt-3">
-    <div class="jumbotron jumbotron-fluid pinky-border py-4">
-      <div class="container text-center">
-        <h1 class="dashboard_header"><i class="far fa-comment-alt"></i> Chat With Aniket Shahane</h1>
-        <div class="dashboard_content white_border mt-4 chatboard" style="width: 90%; height: 60vh; overflow-y: scroll;">
-          <ul class="list-group list-group-flush messages">
-            <li class="list-group-item" style="display: flex;">
-              <!-- <p class="content_header">Aniket Shahane: </p> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Hi, how're you doing ??</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Jason Mraz: </h4> -->
-              <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya??</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Shanay Shah: </h4> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Shanay Shah: </h4> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Shanay Shah: </h4> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Shanay Shah: </h4> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Shanay Shah: </h4> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Shanay Shah: </h4> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Shanay Shah: </h4> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Jason Mraz: </h4> -->
-              <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya??</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Jason Mraz: </h4> -->
-              <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya??</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Jason Mraz: </h4> -->
-              <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya??</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Jason Mraz: </h4> -->
-              <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Pubg khelne aarha hai kya?? Abe bolna bsdk kya chodrela hai be bantai bacchi bomai. Tere shootero ka khaas mere gully me pure shehar ki
-                awaas mere galli me</p>
-            </li>
-            <li class="list-group-item" style="display: flex;">
-              <!-- <h4 class="content_header">Shanay Shah: </h4> -->
-              <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">Sorry Padhna hai abi mujhe. Kyu kyuki hatela hai mere gully ka tareeka saleka sikela hai. Roshan chaukat ye avli bawali hai.</p>
-            </li>
-          </ul>
+      <form id="submission_form_3" method="get">
+        <div class="flex-container-form fields container_chat">
+          <input type="text" class="form-control send_input" name="send_message" required>
+          <a class="send_button" href="javascript:{document.querySelector('#submission_form_3').submit()}">Send</a>
         </div>
-        <form id="submission_form_3" method="get">
-          <div class="flex-container-form fields container_chat">
-            <input type="text" class="form-control send_input" name="send_message" required>
-            <a class="send_button" href="javascript:{document.querySelector('#submission_form_3').submit()}">Send</a>
-          </div>
-        </form>
-      </div>
+      </form>
     </div>
   </div>
-
-  <script type="text/javascript" src="/assets/javascript/main.js"></script>
-</body>
-
-</html>
+</div>
+{% endblock %}

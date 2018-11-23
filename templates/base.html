@@ -45,11 +45,9 @@
             <a class="nav-link nav_subheaders" href="{% url 'register' %}">Register</a>
           </li>
           {% endif %}
-          {% if '/' == request.path %}
           <li class="nav-item my-auto">
             <a class="nav-link nav_subheaders" href="{% url 'about' %}">About</a>
           </li>
-          {% endif %}
           <li class="nav-item my-auto">
             <a class="nav-link" href="https://github.com/AniketShahane" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
           </li>
@@ -75,7 +73,10 @@
 
   {% block content %}
   {% endblock %}
-  <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <script src="{% static 'assets/javascript/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'assets/javascript/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/javascript/lightbox.min.js'%}"></script>
+  <script src="{% static 'assets/javascript/main.js'%}"></script>
 </body>
 
 </html>

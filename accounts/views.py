@@ -14,6 +14,8 @@ def login(request):
             auth.login(request, user)
             #Send a message of successful login
             return redirect('dashboard')
+        else:
+            return redirect('login')
         #else show some kind of an error
     else:
         return render(request, 'accounts/login.html')
