@@ -5,5 +5,6 @@ urlpatterns = [
     path('', views.dashboard, name='dashboard'),
     path('search/', views.search, name='search'),
     path('send/', views.send, name='send'),
-    path('chat/<int:receiver_id>', views.chat, name='chat'),
+    path('chat/<str:receiver_username>', views.chat, name='chat'),
+    path('chatbox/<str:receiver_user>', views.chatbox, name='chatbox'),
 ]

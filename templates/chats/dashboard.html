@@ -70,7 +70,7 @@
         <li class="list-group-item mr-auto" style="display: flex; flex-wrap: wrap;">
           <div style="display: flex; flex-direction: row;">
             <div class="mx-auto my-auto" style="font-size: 2.2vh; font-family: 'Oswald', cursive;">{{smessage.prettyTime}} :</div>
-            <a href="{% url 'chat' smessage.id%}" class="content_header text-center mt-0">@{{smessage.receiver}}</a>
+            <a href="{% url 'chat' smessage.receiver%}" class="content_header text-center mt-0">@{{smessage.receiver}}</a>
           </div>
           <p class="content_message mb-0">{{smessage.shorterBody}}</p>
         </li>
@@ -91,7 +91,7 @@
           <!-- <a href="#" class="content_header text-center mt-0">{{rmessage.sender}}</a> -->
           <div style="display: flex; flex-direction: row;">
             <div class="mx-auto my-auto" style="font-size: 2.2vh; font-family: 'Oswald', cursive;">{{rmessage.prettyTime}} :</div>
-            <a href="{% url 'chat' rmessage.id %}" class="content_header text-center mt-0">@{{rmessage.sender}}</a>
+            <a href="{% url 'chat' rmessage.sender %}" class="content_header text-center mt-0">@{{rmessage.sender}}</a>
           </div>
           <p class="content_message mb-0">{{rmessage.shorterBody}}</p>
         </li>
