@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
-
+{% block title %}Search{% endblock %}
 {% block content %}
 <div class="search-container text-center">
-  <form id="submission_form_2">
+  <form id="submission_form_2" method="get" action="{% url 'search' %}">
+    {% csrf_token %}
     <h1 class="search_header">Search</h1>
     <div class="flex-container-search search_fields my-4">
-      <label for="username" class="my-auto content_message"><i class="fas fa-search"></i> By Name</label>
-      <input type="text" class="form-control form_input" name="messenger_name">
+      <label for="username" class="my-auto content_message"><i class="fas fa-search"></i> Name</label>
+      <input type="text" class="form-control form_input mt-auto" name="messenger_name" style="color: #242582;">
     </div>
     <div class="flex-container-search search_fields my-4">
-      <label for="username" class="my-auto"><i class="fas fa-search"></i> By Content</label>
-      <input type="text" class="form-control form_input content_message" name="message_content">
+      <label for="username" class="my-auto"><i class="fas fa-search"></i> Content</label>
+      <input type="text" class="form-control form_input content_message my-auto" name="message_content" style="color: #242582;">
     </div>
     <a class="submit_form mx-auto mb-2" href="javascript:{document.querySelector('#submission_form_2').submit()}"><i class="fas fa-sign-in-alt mr-2 mt-auto"></i> Search</a>
   </form>
@@ -23,30 +24,16 @@
       <h1 class="dashboard_header">Results</h1>
       <div class="dashboard_content chatboard white_border mt-4" style="height: 25vh; overflow-y: scroll;">
         <ul class="list-group list-group-flush">
+          {% if results and is_filtered %}
+          {% for result in results %}
           <li class="list-group-item" style="display: flex;">
-            <a href="#" class="content_header">Aniket Shahane: </a>
-            <p class="content_message mb-0">Hi, how're you doing ??</p>
+            <a href="{% url 'chat' result.sender %}" class="content_header">@{{result.sender}}: </a>
+            <p class="content_message mb-0">{{result.shorterBody}}</p>
           </li>
-          <li class="list-group-item" style="display: flex;">
-            <a href="#" class="content_header">Jason Mraz: </a>
-            <p class="content_message mb-0">Pubg khelne aarha hai kya??</p>
-          </li>
-          <li class="list-group-item" style="display: flex;">
-            <a href="#" class="content_header">Shanay Shah: </a>
-            <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
-          </li>
-          <li class="list-group-item" style="display: flex;">
-            <a href="#" class="content_header">Shanay Shah: </a>
-            <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
-          </li>
-          <li class="list-group-item" style="display: flex;">
-            <a href="#" class="content_header">Shanay Shah: </a>
-            <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
-          </li>
-          <li class="list-group-item" style="display: flex;">
-            <a href="#" class="content_header">Shanay Shah: </a>
-            <p class="content_message mb-0">Sorry Padhna hai abi mujhe</p>
-          </li>
+          {% endfor %}
+          {% else %}
+          <p class="content_message my-4" style="font-size: 3.8vh;">Enter A Proper Search Term !!</p>
+          {% endif %}
         </ul>
       </div>
     </div>

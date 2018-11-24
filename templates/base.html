@@ -20,7 +20,7 @@
       <a class="nav_header" href="{% url 'home' %}"><i class="fas fa-dove mr-2"></i>PigeonWorks Messaging</a>
       {% endif %}
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" style="font-size: 2vh;"></span>
       </button>
 
       <form action="{% url 'logout' %}" method="post" id="logout_user">
@@ -40,14 +40,17 @@
             <a class="nav-link nav_subheaders" href="{% url 'register' %}">Register</a>
           </li>
           {% endif %}
-          <li class="nav-item my-auto">
-            <a class="nav-link nav_subheaders" href="{% url 'about' %}">About</a>
-          </li>
           {% if user.is_authenticated %}
+          <li class="nav-item my-auto">
+            <a class="nav-link nav_subheaders" href="{% url 'dashboard' %}">Welcome, {{user.username}}</a>
+          </li>
           <li class="nav-item my-auto">
             <a class="nav-link nav_subheaders" href="javascript:{document.getElementById('logout_user').submit()}">Logout</a>
           </li>
           {% endif %}
+          <li class="nav-item my-auto">
+            <a class="nav-link nav_subheaders" href="{% url 'about' %}">About</a>
+          </li>
           <li class="nav-item my-auto">
             <a class="nav-link" href="https://github.com/AniketShahane" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
           </li>

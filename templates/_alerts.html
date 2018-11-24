@@ -1,0 +1,17 @@
+{% if messages %}
+{% for message in messages %}
+<div class="container text-center mb-0 mt-2" id="message">
+  <div class="alert alert-{{message.tags}} alert-dismissable text-center" role="alert" style="font-size: 2.6vh; font-family: 'Oswald', sans-serif;color: #f4f4f4; background-color: rgba(246, 76, 114,0.6); display: inline-block;">
+    <button class="close ml-4 pb-auto mb-auto" type="button" data-dismiss="alert" style="color: white;"><span aria-hidden="true"> &times;</span></button>
+    <strong>
+      {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+      Error:
+      {% else %}
+      {{ message.tags|title }}:
+      {% endif %}
+    </strong>
+    {{message}}
+  </div>
+</div>
+{% endfor %}
+{% endif %}

@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 
+{% block title %}Login{% endblock %}
 {% block content %}
 <div class="container_control text-center">
   <div class="jumbotron p-0 mx-auto">
@@ -9,14 +10,15 @@
       <h3 class="form_main">Log In</h3>
       <div class="flex-container-form fields">
         <label for="username" class="my-auto">Username: </label>
-        <input type="text" class="form-control form_input" name="username">
+        <input type="text" class="form-control form_input" name="username" style="color: #242582;">
       </div>
       <div class="flex-container-form fields">
         <label for="password" class="my-auto">Password: </label>
-        <input type="password" class="form-control form_input" name="password">
+        <input type="password" class="form-control form_input" name="password" style="color: #242582;">
       </div>
       <a class="submit_form" href="javascript:{document.querySelector('#submission_form').submit()}"><i class="fas fa-sign-in-alt fa-xs mt-auto"></i> Log In</a>
     </form>
   </div>
 </div>
+{% include '_alerts.html' %}
 {% endblock %}

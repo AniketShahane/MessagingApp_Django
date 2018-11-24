@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% block title %}DashBoard{% endblock %}
 {% block content %}
 
 <div class="container mt-3">
@@ -42,11 +42,11 @@
           {% csrf_token %}
           <div class="flex-container-form fields">
             <label for="username" class="my-auto" style="flex:1;"><i class="fas fa-user-alt"></i></label>
-            <input type="text" class="form-control form_input" name="username" placeholder="Username" style="flex:4;">
+            <input type="text" class="form-control form_input" name="username" placeholder="Username" style="flex:4; color: #242582;">
           </div>
           <div class="flex-container-form fields">
             <label for="password" class="my-auto" style="flex:1;"><i class="fas fa-scroll"></i></label>
-            <textarea type="text" class="form-control form_input" name="message" placeholder="Message" style="flex:4;" rows="4"></textarea>
+            <textarea type="text" class="form-control form_input" name="message" placeholder="Message" style="flex:4; color: #242582; font-family:'Roboto Condensed', sans-serif; font-size: 2.6vh;" rows="4"></textarea>
           </div>
         </form>
       </div>
@@ -57,7 +57,7 @@
     </div>
   </div>
 </div>
-
+{% include '_alerts.html' %}
 <div class="dashboard_content white_border mt-4 text-center chatboard" style="height: 50vh; overflow-y: scroll; background-color: #242582;">
   <div class="flex-container">
     <div class="sent_section">
