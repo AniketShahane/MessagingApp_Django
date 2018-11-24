@@ -14,14 +14,14 @@
           <li class="list-group-item" style="display: flex;">
             <!-- <h4 class="content_header">Jason Mraz: </h4> -->
             <p class="content_message_chat my-0 ml-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">
-              <span style="display: flex; flex-direction: column"><span>{{chat.msg.body}}</span><span style="font-size: 1.6vh; margin-left: auto; color: #242582; margin-right: 4px;">{{chat.msg.prettyTime}}</span></span>
+              <span style="display: flex; flex-direction: column"><span style="text-align: left;">{{chat.msg.body}}</span><span style="font-size: 1.6vh; margin-left: auto; color: #242582; margin-right: 4px;">{{chat.msg.prettyTime}}</span></span>
             </p>
           </li>
           {% else %}
           <li class="list-group-item" style="display: flex;">
             <!-- <p class="content_header">Aniket Shahane: </p> -->
             <p class="content_message_chat my-0 mr-auto px-2 py-1" style="max-width: 50%; font-size: 2.5vh;">
-              <span style="display: flex; flex-direction: column"><span>{{chat.msg.body}}</span><span style="font-size: 1.6vh; margin-left: 4px; color: #242582; margin-right: auto;">{{chat.msg.prettyTime}}</span></span>
+              <span style="display: flex; flex-direction: column"><span style="text-align: left;">{{chat.msg.body}}</span><span style="font-size: 1.6vh; margin-left: 4px; color: #242582; margin-right: auto;">{{chat.msg.prettyTime}}</span></span>
             </p>
           </li>
           {% endif %}

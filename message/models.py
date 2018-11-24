@@ -10,8 +10,8 @@ class message(models.Model):
     time = models.DateTimeField(default=now_time)
 
     def shorterBody(self):
-        if len(self.body) >= 20:
-            return self.body[:20]+'...'
+        if len(self.body) >= 35:
+            return self.body[:35]+'...'
         else:
             return self.body
 
