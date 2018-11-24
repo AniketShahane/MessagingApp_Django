@@ -1,0 +1,445 @@
+// OVERRIDES
+// Main Body Overrides
+$body-bg: #2f2fa2;
+$body-color: #f64C72;
+
+// NavBar Overrides
+$navbar-light-color:                #f4f4f4;
+$navbar-light-hover-color:          #f64c72;
+$navbar-light-active-color:         #f64c72;
+
+// Jumbotron Overrides
+$jumbotron-bg: #242582;
+
+// Form Overrides
+$input-border-color: #f64c72;
+
+// List Group Overrides
+$list-group-bg: #242582;
+$list-group-border-color: rgba(0,0,0,0);
+
+// Modal Overrides
+$modal-content-bg: #242582;
+$modal-content-border-color: rgba(246, 76, 114, 0.5);
+$modal-header-border-color: #f64c72;
+$modal-footer-border-color: #f64c72;
+$modal-content-bg:                  #242582;
+$modal-content-border-color:       #f64c72 ;
+$modal-content-border-width: 4px;
+// $modal-header-border-width: 2px;
+// $modal-footer-border-width: 2px;
+
+// Utilities Overrides
+.bg-dark_blue{
+  background-color: #242582 !important;
+}
+$primary: #f64c72;
+$secondary: #242582;
+$success: rgba(246, 76, 114,0.6);
+
+// CUSTOM CSS
+// Tag Elements,11
+input {
+  color: #242582;
+}
+a {
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// NavBar
+nav {
+  border-bottom: 2px solid #f64c72;
+}
+
+.nav_header{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 3.8vh;
+}
+
+.nav_header:hover {
+  text-decoration: none;
+}
+
+.nav_subheaders{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8vh;
+}
+
+// Jumbotron
+.jumbo-header{
+  font-size: 5.4vh;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.jumbo-content{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.8vh;
+  text-align: center;
+}
+
+// Box With Facts
+.box-icon {
+  // font-size: 8vh;
+  margin: 0.6rem auto;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.box {
+  flex-basis: 30%;
+}
+
+.box-content{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3vh;
+  color: #f4f4f4;
+}
+
+.fact-main {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3.6vh;
+  color: #f4f4f4;
+  display: inline-block;
+  margin: 0.6rem auto;
+}
+
+// Main Forms
+.main-form {
+  border: 2px solid white;
+  padding: 2rem;
+  height: 50%;
+  padding-bottom: 4rem;
+}
+
+.fields {
+  margin: 2.6rem auto;
+  input {
+    width: 60%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f4f4f4;
+    font-size: 2.4vh;
+    margin-left: 0.2rem;
+  }
+  label {
+    width: 40%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f4f4f4;
+    font-size: 2.8vh;
+  }
+  button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vh;
+  }
+}
+
+.container_control{
+  width: 40%;
+  margin: 2rem auto;
+}
+
+.flex-container-form{
+  display: flex;
+  justify-content: space-around;
+}
+
+.form_main{
+  font-size: 4.2vh;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.submit_form {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.8vh;
+  border: 2px solid #f64c72;
+  border-radius: 25px;
+  padding: 0.4rem 10%;
+  margin-top: 2rem;
+  max-width: 60%;
+}
+
+.submit_form:hover {
+  text-decoration: none;
+  background-color: #f64c72;
+  color: #f4f4f4;
+}
+
+.logo_user i{
+  font-size: 12vh;
+}
+
+// DashBoard Thingys
+// Fluid Jumbotron
+.dashboard_header{
+  font-size: 3.6vh;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.dashboard_subheader{
+  font-size: 3.4vh;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+.flex-container-dashboard{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  .option1, .option2, .option3{
+    margin: 0 1.2rem;
+  }
+
+  a:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+  }
+}
+
+.option_icon{
+  font-size: 6vh;
+  font-family: 'Oswald', serif;
+}
+
+.dashboard_content{
+  width: 65%;
+  margin: 1.2rem auto;
+  color: #f4f4f4;
+  .content_header{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3.2vh;
+    text-align: left;
+    color: #f64c72;
+    margin: auto 1rem;
+    transition: all 0.4s;
+    &:hover{
+      color: #99738e;
+      font-size: 3.4vh;
+      text-decoration: none;
+    }
+  }
+  .content_message{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vh;
+    padding: auto 0.6rem;
+  }
+}
+
+.content1, .content2 {
+  flex-basis: 46%;
+
+}
+
+// Search
+.search-container{
+  width: 60%;
+  background-color:#242582;
+  padding: 1rem;
+  margin: 0.4rem auto;
+  border: 2px solid #f4f4f4;
+}
+
+.search_fields {
+  margin: 2.6rem auto;
+  input {
+    width: 60%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f4f4f4;
+    font-size: 2.4vh;
+    margin-left: 0.2rem;
+  }
+  label {
+    width: 40%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f4f4f4;
+    font-size: 2.6vh;
+  }
+  a {
+    margin: 0.6rem 0;
+  }
+}
+
+.search_header{
+  font-size: 3.8vh;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+.flex-container-search {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.flex-container-search label {
+  flex: 1;
+  text-align: center;
+}
+
+.flex-container-search input {
+  flex: 3;
+}
+
+
+// Chat Section
+
+.content_message_chat{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3vh;
+  // padding: auto 0.8rem
+  border: 2px solid #f64c72;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  color: #f64c72;
+}
+
+.container_chat{
+  width: 90%;
+  margin: 1.2rem auto;
+  color: #f4f4f4;
+  .send_button{
+    border: 2px solid #f64c72;
+    margin: 0 0.4rem;
+    padding: 0.2rem 10%;
+    border-radius: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.6vh;
+    transition: all 0.4s;
+    &:hover {
+      text-decoration: none;
+      background-color: #f64c72;
+      color: #f4f4f4;
+    }
+  }
+  .send_input{
+    border-radius: 25px;
+  }
+}
+
+.messages {
+  vertical-align: bottom;
+}
+
+// Scroll Bar Customization
+.chatboard::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+.chatboard::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.6);
+    border-radius: 10px;
+}
+
+.chatboard::-webkit-scrollbar-thumb {
+  background: linear-gradient(#f64c72, #f2bcc8);
+  outline: 1px solid #f4f4f4;
+  border-radius: 10px;
+}
+
+// .chatboard {
+//   background-color: #242582;
+// }
+
+// Modal Form
+.modal_body_content{
+  color: #f4f4f4;
+}
+
+.modal_send_button, .modal_cancel_button{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2vh;
+}
+
+
+// Messages Section - Sent and Received
+.sent_section{
+  flex: 1;
+  min-height: 49vh;
+}
+.received_section{
+  flex: 1;
+  min-height: 49vh;
+}
+
+
+
+// Utilities
+.pinky-border{
+  border: 2px solid #f64c72;
+}
+
+.white_border{
+  border: 2px solid #f4f4f4;
+  border-radius: 4px;
+}
+
+.smallContainer{
+  width: 50%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.wbtn {
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 16vh;
+}
+
+
+// Media Queries
+@media only screen and (min-width: 768px){
+  .flex-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .flex-container-column{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .dashboard_content{
+    width: 90%;
+  }
+  .search-container{
+    width: 98%;
+    .search_fields i {
+      display: none;
+    }
+  }
+  .message_in_small_sections{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:768px){
+  .dashboard_content {
+    width: 90%;
+  }
+  .container_control{
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .search-container{
+    width: 75%;
+  }
+  .message_in_small_sections{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Oswald|Permanent+Marker|Roboto+Condensed');
+@import "../bootstrap/scss/bootstrap";
